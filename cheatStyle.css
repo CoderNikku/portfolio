@@ -1,0 +1,454 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply some basic styling to the page */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style the navigation section */
+section {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlogo img {
+    max-width: 200px; /* Adjust the max-width as needed */
+}
+
+.navtag ul {
+    list-style: none;
+    display: flex;
+}
+
+.navtag li {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.navtag a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navtag a:hover {
+    color: #007bff; /* Change the color on hover as desired */
+}
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navtag ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navtag li {
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+/* style home css */
+/* Reset some default styles */
+body, h1, h2, p, img, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply some basic styling to the page */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style the profile section */
+section {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.home_container {
+    display: flex;
+    align-items: center;
+}
+
+.profile_img img {
+    border-radius: 50%;
+    max-width: 150px; /* Adjust the max-width as needed */
+}
+
+.profile_intro {
+    margin-left: 20px;
+}
+
+.profile_intro h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.profile_intro h5 {
+    color: #007bff; /* Set desired color for the name */
+    margin-bottom: 10px;
+}
+
+.profile_intro p {
+    color: #333;
+    line-height: 1.5;
+}
+
+.profile_intro a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Set desired background color for the link */
+    color: #fff; /* Set desired text color for the link */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.profile_intro a:hover {
+    background-color: #0056b3; /* Change the background color on hover as desired */
+}
+
+@media screen and (max-width: 768px) {
+    .home_container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+}
+
+
+
+
+
+
+/* style the eduction  */
+.education {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+/* Style each education container */
+.education div {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style paragraphs inside each education container */
+/* General styling for education section */
+.education {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Styling for each education container */
+.education div {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for paragraphs inside each education container */
+.education p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Style for degree titles */
+.education p:nth-child(odd) {
+    font-weight: bold;
+}
+
+/* Style for institute names */
+.education p:nth-child(even) {
+    color: #007bff;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .education {
+        flex-direction: column; /* Stack containers vertically on smaller screens */
+        align-items: center; /* Center items in the column */
+    }
+
+    .education div {
+        flex: 100%; /* Make each container take full width on smaller screens */
+    }
+}
+
+
+
+
+/* experience page css styling  */
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply some basic styling to the page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Style the experience section */
+section {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.experience {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Style each job container */
+.experience > div {
+    flex: 1;
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style paragraphs inside each job container */
+.experience p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Style company names */
+.experience p:nth-child(odd) {
+    font-weight: bold;
+    color: #007bff; /* Set desired color for company names */
+}
+@media screen and (max-width: 768px) {
+    /* Change the layout to a single column on smaller screens */
+    .experience > div {
+        flex: 100%;
+    }
+}
+
+
+
+
+
+/* skils css  */
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply some basic styling to the page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Style the sections */
+section {
+    margin-bottom: 20px;
+}
+
+/* Style the skills section */
+.skills {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style each skill item */
+.skills li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #3498db; /* Use a subtle blue color */
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    height: 50px; /* Increase the height for better visibility */
+}
+
+/* Add some hover effect to the skills items */
+.skills li:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Style the percentage indicator */
+.skills li::after {
+    content: attr(data-level) '%';
+    display: block;
+    background-color: #2980b9; /* Darker blue for the indicator */
+    color: #fff;
+    border-radius: 0 0 5px 5px;
+    padding: 5px;
+}
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    /* Change the layout to a single column on smaller screens */
+    .skills li {
+        flex: 100%;
+    }
+}
+
+
+
+
+/* project the create css style  */
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply some basic styling to the page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Style the projects section */
+section {
+    padding: 20px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05); /* Add a subtle scale effect on hover */
+}
+
+.project p {
+    margin-bottom: 10px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .projects {
+        flex-direction: column;
+    }
+
+    .project {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+/* footer styling  */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+section.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content p {
+    flex: 1;
+    margin: 0;
+}
+
+.social-links {
+    flex: 1;
+    text-align: right;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content p,
+    .social-links {
+        flex: auto;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .social-links {
+        order: -1; /* Move social links above the text on smaller screens */
+    }
+}
+
+
+
+
+
+
