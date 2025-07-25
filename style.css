@@ -40,7 +40,7 @@ section {
 }
 
 .navlogo img {
-    max-width: 130px;
+    max-width: 100px;
 }
 
 .navtag ul {
@@ -95,15 +95,14 @@ section {
     }
 
     .navlogo img {
-        height: 50px;
-        width: 80px;
+        max-width: 100px;
     }
 
     .navtag ul {
         flex-direction: column;
         align-items: flex-start;
         align-items: end;
-        margin-left: 100px;
+        margin-left: 50px;
     }
 
     .navtag li {
@@ -133,13 +132,14 @@ section {
 }
 
 .profile_img img {
-    height: 300px;
-    width: 200px;
+    height: 400px;
+    width: 300px;
 }
 
 .profile_intro {
     margin-left: 20px;
     padding: 70px 40px;
+    text-align: justify;
 }
 
 .profile_intro h3 {
@@ -183,6 +183,10 @@ section {
         padding: 0px 0px;
         margin: 0px 0px;
     }
+
+    .profile_intro {
+        text-align: justify;
+    }
 }
 
 
@@ -197,6 +201,9 @@ section {
 
 .education {
     padding: 20px 20px;
+    margin: 30px 20px;
+    border: 2px solid black;
+    border-radius: 0.8%;
 }
 
 .education p {
@@ -221,13 +228,16 @@ section {
 /* styling my exprince section */
 .experince-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 100px 30px;
     padding: 40px 30px;
 }
 
 .experince {
     padding: 20px 20px;
+    margin: 30px 20px;
+    border: 2px solid black;
+    border-radius: 0.8%;
 }
 
 .experince span {
@@ -246,40 +256,22 @@ section {
 }
 
 
-/* styling skill section */
-.skills-section {
-    margin: 40px 40px;
-    padding: 20px 30px;
-    align-items: center;
-}
-
-.skills-section li {
-    list-style-type: none;
-    text-align: center;
-}
-
-.skills-section a {
-    text-decoration: none;
-}
-
-@media screen and(max-width:768px) {
-    .skills-section {
-        margin: 0px;
-        padding: 0px;
-    }
-}
-
 
 /* styling  project section  */
 .projects-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 40px 30px;
     padding: 30px 20px;
 }
 
 .project {
     align-items: center;
+    padding: 20px 20px;
+    margin: 30px 20px;
+    border: 2px solid black;
+    border-radius: 0.8%;
+
 }
 
 .project span {
@@ -303,6 +295,32 @@ section {
 }
 
 
+/* styling skill section */
+.skills-section {
+    margin: 40px 40px;
+    padding: 50px 30px;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 1%;
+}
+
+.skills-section li {
+    list-style-type: none;
+    text-align: center;
+    padding: 5px 5px;
+    align-items: self-start;
+}
+
+.skills-section a {
+    text-decoration: none;
+}
+
+@media screen and(max-width:768px) {
+    .skills-section {
+        margin: 0px;
+        padding: 0px;
+    }
+}
 
 
 /* footer styling  */
