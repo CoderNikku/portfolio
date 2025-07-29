@@ -1,146 +1,120 @@
-/* Reset some default styles */
-body,
-h1,
-h2,
-p,
-ul,
-li {
-    margin: 0;
-    padding: 0;
+/* === Reset & Base Styles === */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Apply some basic styling to the page */
 body {
-    font-family: 'Arial', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
-/* Style the navigation section */
 section {
-    background-color: #f8f8f8;
-    padding: 20px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  position: relative;
 }
 
-
+/* === NAVBAR Default (desktop) === */
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav.active {
-    display: block;
-}
-
-#nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  position: relative;
 }
 
 .navlogoOut {
-    display: none;
-}
+  display: none; /* Hidden on mobile */
+}   
+
+
+.navigate {
+  display: none; /* Hidden on desktop */
+}   
 
 .navlogo img {
-    max-width: 70px;
-    margin-left: 20px;
+  max-width: 70px;
 }
 
 .navtag ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .navtag li {
-    margin-right: 20px;
-    font-size: 20px;
+  margin-right: 20px;
+  font-size: 20px;
 }
 
 .navtag a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .navtag a:hover {
-    color: #007bff;
-    /* Change the color on hover as desired */
+  color: #007bff;
 }
 
-.navigate {
-    display: none;
+.navigate,.remove {
+  display: none; /* Hidden on desktop */
+}
+
+/* === RESPONSIVE SIDEBAR (Mobile) === */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: white;
+    padding: 10px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .nav.active {
+    transform: translateX(0);
+  }
+
+  .navtag ul {
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .navtag li {
+    margin: 15px 0;
+  }
+
+  .navigate {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 1100;
+  }
+
+  .remove {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    z-index: 11001;
+  }
+
+  .navlogoOut {
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
-.remove {
-    display: none;
-}
-
-
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-
-    /* Adjust styles for smaller screens */
-    .nav {
-        display: none;
-        background-color: antiquewhite;
-        opacity: 0.5;
-        background: transparent;
-    }
-
-    .navlogoOut {
-        display: block;
-    }
-
-    .navlogoOut img {
-        max-width: 70px;
-    }
-
-    .navlogo {
-        display: none;
-    }
-
-    .nav.active {
-        display: block;
-        text-align: end;
-    }
-
-    .navlogo img {
-        max-width: 100px;
-    }
-
-    .navtag ul {
-        flex-direction: column;
-        align-items: flex-start;
-        align-items: end;
-        margin-left: 50px;
-    }
-
-    .navtag li {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 18px;
-    }
-
-    .navigate {
-        display: block;
-        text-align: end;
-        margin: 10px 20px;
-    }
-
-    .remove {
-        display: block;
-        text-align: end;
-        margin: 10px 20px;
-    }
-
-}
 
 /* styling about page */
 .about {
