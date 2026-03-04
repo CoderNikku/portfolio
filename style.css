@@ -18,7 +18,7 @@ section {
 /* === NAVBAR Default (desktop) === */
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background: white;
   padding: 20px;
